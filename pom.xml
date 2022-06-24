@@ -17,6 +17,22 @@
         <java.version>17</java.version>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
     </properties>
+    
+    <distributionManagement>
+        <repository>
+            <id>my-maven-repo</id>
+            <name>Internal Releases</name>
+            <url>http://146.59.154.110:8081/nexus/repository/maven-releases/</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>my-maven-repo</id>
+            <name>Internal Releases</name>
+            <url>http://146.59.154.110:8081/nexus/repository/maven-snapshots/</url>
+        </snapshotRepository>
+
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
